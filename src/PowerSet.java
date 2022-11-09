@@ -58,7 +58,14 @@ public class PowerSet {
     }
 
     public int size() {
-        return this.size;
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+            if (slots[i] != null) {
+                count++;
+            }
+        }
+
+        return count;
     }
 
     // my
@@ -88,10 +95,10 @@ public class PowerSet {
     public PowerSet intersection(PowerSet set2) {
         PowerSet inter = new PowerSet();
 
-        for (int i = 0; i < size(); i++) {
+        for (int i = 0; i < size; i++) {
             if (slots[i] == null) continue;
 
-            for (int j = 0; j < set2.size(); j++) {
+            for (int j = 0; j < set2.size; j++) {
                 if (set2.slots[j] != null && slots[i].equals(set2.slots[j])) {
                     inter.put(slots[i]);
                     break;
@@ -105,13 +112,13 @@ public class PowerSet {
     public PowerSet union(PowerSet set2) {
         PowerSet uni = new PowerSet();
 
-        for (int i = 0; i < size(); i++) {
+        for (int i = 0; i < size; i++) {
             if (slots[i] != null) {
                 uni.put(slots[i]);
             }
         }
 
-        for (int i = 0; i < set2.size(); i++) {
+        for (int i = 0; i < set2.size; i++) {
             if (set2.slots[i] != null) {
                 uni.put(set2.slots[i]);
             }
@@ -124,11 +131,11 @@ public class PowerSet {
         PowerSet dif = new PowerSet();
         boolean flag;
 
-        for (int i = 0; i < size(); i++) {
+        for (int i = 0; i < size; i++) {
             if (slots[i] == null) continue;
             flag = false;
 
-            for (int j = 0; j < set2.size(); j++) {
+            for (int j = 0; j < set2.size; j++) {
                 if (set2.slots[j] != null && slots[i].equals(set2.slots[j])) {
                     flag = true;
                     break;
@@ -146,11 +153,11 @@ public class PowerSet {
     public boolean isSubset(PowerSet set2) {
         boolean flag;
 
-        for (int i = 0; i < set2.size(); i++) {
+        for (int i = 0; i < set2.size; i++) {
             if (set2.slots[i] == null) continue;
             flag = false;
 
-            for (int j = 0; j < size(); j++) {
+            for (int j = 0; j < size; j++) {
                 if (slots[j] != null && set2.slots[i].equals(slots[j])) {
                     flag = true;
                     break;
