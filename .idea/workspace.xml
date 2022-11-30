@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="082d5b03-16f6-4f8a-affd-43ca4b5a966f" name="Changes" comment="Create / complete project">
-      <change afterPath="$PROJECT_DIR$/src/PowerSetTest.java" afterDir="false" />
+    <list default="true" id="082d5b03-16f6-4f8a-affd-43ca4b5a966f" name="Changes" comment="Remake size() method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgoEx10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgoEx10.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PowerSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PowerSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerSetTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668009825664</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remake size() method">
+      <created>1668013286307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668013286307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +120,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create / complete project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create / complete project" />
+    <MESSAGE value="Remake size() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remake size() method" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PowerSetTest.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
